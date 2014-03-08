@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link href="css/jquery-ui.css" rel="stylesheet">
+		<style>
+			.ui-widget{
+				font-size: .7em;
+			}
+			.ui-menu-item{
+				width: 100%;
+			}
+		</style>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+		<script type="text/javascript" src="js/client_management.js"></script>
+	</head>
+	<body style="width: 100%; height: 100%; margin: 0; padding: 0;">
+		<!-- meniul din colutl stang de sus ( daca mai aveti ideii ce trebuie adaugat acolo ... ) -->
+		<ul id="menu">
+			<li>
+				<a href="#"><span class="ui-icon ui-icon-home"></span>&nbsp</a>
+				<ul>
+					<li><a href="#"><span class="ui-icon ui-icon-person"></span>Client</a>
+						<ul>
+							<li><a id="AddNewClient"><span class="ui-icon ui-icon-plus"></span>Add</a></li>
+							<li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-refresh"></span>Refresh</a></li>
+							<li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-help"></span>...</a></li>
+						</ul>
+					</li>
+					<li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-zoomout"></span>Consumables</a></li>
+					<li class="ui-state-disabled"><a href="#"><span class="ui-icon ui-icon-zoomout"></span>Breakables</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<!-- forumularul pt adaugare client -->
+		<div id="dialog-addNewClient">
+			<table style="font-size: 1em; margin: auto">
+				<tr>
+					<td>First Name: </td>
+					<td><input type="text" name="FName"></td>
+				</tr>
+				<tr>
+					<td>Last Name: </td>
+					<td><input type="text" name="LName"></td>
+				</tr>
+				<tr>
+					<td>Analysis: </td>
+					<td><input type="text" name="Analysis"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
